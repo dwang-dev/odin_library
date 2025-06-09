@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset  */
+* {
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --library-red: rgb(165, 42, 42, 0.4);
+    --library-yellow: rgb(235, 220, 173, 0.4);
+    --library-gray: rgb(84, 100, 106, 0.4);
+    --library-brown: rgb(93, 66, 70, 0.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 100px;
+    padding: 5px;
+    font-size: 1em;
+    border: 2px solid var(--library-gray);
+}
+
+button:active {
+    border: 2px solid black;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+}
+
+select {
+    outline: none;
+}
+
+#libraryHeader {
+    background-color: var(--library-red);
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+#libraryMain {
+    flex: 1;
+    background-color: var(--library-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#newBookBtn {
+    margin-top: 5%;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+#newBookBtn:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+#newBookForm {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(84, 100, 106, 1);;
+    padding: 20px;
+    border-radius: 20px;
+    top: 15%; 
+    border: 2px solid black;
+}
+
+#submitForm {
+    background-color: green;
+}
+
+#closePopup {
+    background-color: red;
+}
+
+#cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 200px;                 
+    grid-auto-columns: 200px; 
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--library-red);
+    border: 5px solid var(--library-gray);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.read {
+    background-color: green
+}
+
+.notRead {
+    background-color: white;
+}
+
+.deleteBtn {
+    background-color: red;
+}
+
+#libraryFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    background-color: var(--library-gray);
+}
+
+#libraryFooter img {
+    height: 30px;
+}

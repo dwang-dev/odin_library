@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WangzLibrary</title>
+    <script src = "library.js" defer></script>
+    <link href = "styles.css", rel = "stylesheet">
+</head>
+<body>
+    <header id = "libraryHeader">
+        <h1>wangzLibrary</h1>
+    </header>
+    <main id = "libraryMain">
+        <button id = "newBookBtn">+ Add Book</button>
+        <form action = "/" method = "GET" id = "newBookForm">
+            <input type = "text", id = "titleInput" placeholder = "Title" required>
+            <input type = "text" id="authorInput" placeholder = "Author" required>
+            <input type = "number" id = "pageNoInput" placeholder = "Pages" required>
+            <div>
+                <label for = "isBookRead">Read the Book?</label>
+                <select name = "readBool" id = "readBool">
+                    <option value = "True">Yes</option>
+                    <option value = "False">No</option>
+                </select>
+            </div>
+            <div id="formButtonsWrapper">
+                <button id = "submitForm", type = "submit">Submit</button>
+                <button id = "closePopup" type = "button">Close</button>
+            </div>
+        </form>
+        <div id = "cardsWrapper"></div>
+    </main>
+    <footer id = "libraryFooter">
+        <a href = "https://github.com/dwang-dev/odin_library">
+            <img src = "./assets/github-mark.png" alt="Github Logo">
+        </a>
+    </footer>
+</body>
+</html>
+
